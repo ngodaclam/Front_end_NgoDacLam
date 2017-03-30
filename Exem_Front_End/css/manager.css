@@ -1,0 +1,68 @@
+/*Format standard support manager.html*/
+
+@import url('basic.css');
+
+.main{
+	margin: 100px auto	;
+	width: 900px;
+	height: 400px;
+	
+}
+
+.title{
+	padding: 10px 10px;
+	height: 100px;
+	background: #bdbdbd;
+}
+
+.content{
+	margin: 10px 0px;
+	width: 500px;
+	height: 300px;
+	float: left;
+	background: #bdbdbd;
+	padding: 10px 10px;
+}	
+
+.content input h3{
+	float: right;
+	
+}
+
+.content input{
+	
+	
+}
+
+.information{
+	width: 340px;
+	height: 300px;
+	
+	background: #bdbdbd;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	float: left;
+}
+
+.information1{
+	background: #FFFFFF;
+	padding: 2px 2px;
+}
+
+.information1 a{
+	margin: 0px 10px;
+}
+
+h4{
+	font-style: italic;
+	color: #424242;
+}
+
+.close{
+	background: url('../picture/close.png') no-repeat center;
+}
+
+.nd{
+	 width: 400px;
+	 height: 100px;
+}

@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Manager</title>
+		<link href = "../css/manager.css" rel="stylesheet" type="text/css"> 
+		<script language="JavaScript" src="../js/manager.js"></script>
+	</head>
+	<body>
+		<div class = "main">
+			<div class = "title">
+				<h1>Nội dung bài viết</h1>
+			</div>
+			
+			<div class = "content">
+				<form name="frmDangBai" action="" method="">
+					<h3>Tiêu đề: </h3><input type="text" name="txtKeyword"/><br/>
+					<h3>Liên kết tĩnh: </h3><input type="text" name="linkStatic"/><br/>
+					<h3>Nội dung: </h3><input type="textarea" class="nd" name="txtContent"/><br/><br/>
+					
+					Lịch đăng:&nbsp;&nbsp;
+					<input type="radio" name="lichDang" onClick="setStatus(true)"/>&nbsp;&nbsp;Đăng ngay
+					<input type="radio" name="lichDang" onClick="setStatus(false)"/>&nbsp;&nbsp;Đặt lịch&nbsp;&nbsp;
+					<input type="text" placeholder=" dd/mm/yyyy hh:mm" 
+					name="dateTime" disabled="false" id="dateTimeId" 
+					/><br/><br/>
+					
+					<input type="button" value="Đăng bài"  onclick="checkValidKeyword(this.form)"/>				
+					<input type="button" value="Reset" onclick="resetAll(this.form)"/>
+				</form>
+			</div>
+			
+			<div class = "information">
+				<h2>Thông tin bổ sung</h2><br/>
+				<form name="frmInformation" action="" method="">
+					<h3>Email liên hệ: </h3><input type="text" placeholder="Nhập email" name="email"/><br/>
+					<h3>Số điện thoại: </h3><input type="text" placeholder="Nhập số điện thoại" name="phone"/><br/>
+					<h3>Thẻ đánh dấu: </h3><br/>
+					<div class="information1">
+						<input type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="button" value="Thêm"onclick="chaeckEmailPhone(this.form)"/>
+						
+						<h4>Phân tách các thẻ bằng dấu (,).</h4><br/>
+						<a href="#" class="close">the 1</a>
+						<a href="#" class="close">the 2</a>
+						<a href="#" class="close">the 3</a>
+						<a href="#" class="close">the 4</a>
+					</div>
+				</form>
+			</div>
+			<div class = "clr">
+			</div><!--Close clr-->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+/*Format standard support Home_page.css*/
+
+*{
+	margin: 0;
+}
+
+.clr{
+	clear: both;
+}
+
+.menu a:hover{
+	color: #FFFFFF;
+}
+
+a{
+	text-decoration: none;
+}
+
+.chooseLanguage a:hover{
+	color: #FFFFFF;
+}
+
+.search:hover{
+	background: url(../picture/search2.png) no-repeat center;
+}
+
+.setting:hover{
+	background: url(../picture/optionHover.png) no-repeat center;
+}
+
